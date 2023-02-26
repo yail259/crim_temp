@@ -1,27 +1,49 @@
 <script>
+    import productsInStore from '/src/store.js';
+    import { goto } from '$app/navigation';
+  
+    export let data;
 
-import productsInStore from './../../../store.js';
+    let sproduct;
 
-export let data;
+    let error = null;
+    let elements;
+    let processing = false;
 
-let sproduct;
-
-console.log(data.id);
-
-for (let product of $productsInStore) {
-
-    if (parseInt(data.id) == product.id) {
-        sproduct = product;
+    for (let product of $productsInStore) {
+        if (parseInt(data.id) == product.id) {
+            sproduct = product;
+        }
     }
-}
 
-console.log(sproduct)
+    async function submit() {
+        // avoid processing duplicates
+        if (processing) return
+
+        processing = true
+        // confirm payment with stripe
+        const result = await data.stripe.confirmPayment({
+            elements,
+            redirect: 'if_required'
+        })
+
+        // log results, for debugging
+        console.log({ result })
+
+        if (result.error) {
+            // payment failed, notify user
+            error = result.error;
+            processing = false;
+        } else {
+            goto('/payment-success');
+        }
+    }
+
+    
 
 </script>
 
 <div class = "ind_prod">
-
-    
     <div class = "disp_container">
         <div class = "disp" style = "background-image: url({sproduct.image})">
         </div>
@@ -29,7 +51,9 @@ console.log(sproduct)
     <div class = "desc_container">
         <h1>{sproduct.name}</h1>
         <p1>Product description</p1><br>
-        <p1> Price : {sproduct.price}</p1>
+        <p1> Price : {sproduct.price/100}</p1>
+
+        <a href={'/payment/' + data.id}>Buy</a>
     </div>
 </div>
 

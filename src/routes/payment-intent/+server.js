@@ -5,9 +5,11 @@ import { json } from '@sveltejs/kit'
 // initialize Stripe
 const stripe = new Stripe(SECRET_STRIPE_KEY);
 
-export async function POST() {
+export async function POST({ request }) {
+    const requestObj = await request.json();
+
     const paymentIntent = await stripe.paymentIntents.create({
-        amount: 2000,
+        amount: requestObj.cost,
         currency: 'usd',
         automatic_payment_methods: {
             enabled: true

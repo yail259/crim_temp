@@ -5,25 +5,25 @@ const productsInStore = writable([
         id: 1,
         name: "Tracksuit",
         image: "/1.jpg",
-        price: 300
+        price: 30000
     },
     {
         id: 2,
         name: "Alien",
         image: "/2.jpg",
-        price: 690
+        price: 69000
     },
     {
         id: 3,
         name: "Trouser",
         image: "/3.jpg",
-        price: 220
+        price: 22000
     },
     {
         id: 4,
         name: "NoImage",
         image: "/4.jpg", 
-        price: 4200
+        price: 420000
     },
 ]);
 
