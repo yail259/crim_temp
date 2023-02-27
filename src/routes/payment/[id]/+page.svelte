@@ -3,8 +3,13 @@
     import { goto } from '$app/navigation';
     import { loadStripe } from '@stripe/stripe-js';
     import { PUBLIC_STRIPE_KEY } from '$env/static/public'
+	import { onMount } from 'svelte';
 
-    const stripe = loadStripe(PUBLIC_STRIPE_KEY);
+    let stripe;
+
+    onMount(async () => {
+        stripe = await loadStripe(PUBLIC_STRIPE_KEY);
+    })
 
     export let data;
 
@@ -18,7 +23,7 @@
 
         processing = true
         // confirm payment with stripe
-        const result = await data.stripe.confirmPayment({
+        const result = await stripe.confirmPayment({
             elements,
             redirect: 'if_required'
         })
@@ -72,6 +77,26 @@
 
 
 <style>
+
+    :global(body)
+    {
+        background-color: #f9f6ee;
+        color: #000000;
+        font-family: 'Calibri';
+        margin: 0px;
+        padding: 0px;
+    }
+
+    *
+    {   
+        font-family: 'Calibri';
+        color: #000000;
+        background-color: #f9f6ee;
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
     .ind_prod
     {
         border-bottom: 1px solid #000000;
