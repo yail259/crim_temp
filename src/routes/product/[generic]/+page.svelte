@@ -53,7 +53,7 @@
         <p1>Product description</p1><br>
         <p1> Price : {sproduct.price/100}</p1>
 
-        <a href={'/payment/' + data.id}>Buy</a>
+        <a href='/payment/{sproduct.id}'>Buy</a>
     </div>
 </div>
 

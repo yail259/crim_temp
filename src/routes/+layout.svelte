@@ -31,50 +31,50 @@
             <div class = "footer_item">
                 <h2>CLIENT SERVICES</h2>
                 <ul>
-                    <li><a href = '#'>FAQ</a></li>
-                    <li><a href = '#'>Track Order</a></li>
-                    <li><a href = '#'>Returns</a></li>
-                    <li><a href = '#'>Delivery</a></li>
-                    <li><a href = '#'>Payment</a></li>
-                    <li><a href = '#'>BOOK AN APPOINTMENT<br>
+                    <li><a href = '/'>FAQ</a></li>
+                    <li><a href = '/'>Track Order</a></li>
+                    <li><a href = '/'>Returns</a></li>
+                    <li><a href = '/'>Delivery</a></li>
+                    <li><a href = '/'>Payment</a></li>
+                    <li><a href = '/'>BOOK AN APPOINTMENT<br>
                     Your selected store will reply shortly</a></li>
                 </ul>
             </div>
             <div class = "footer_item">
                 <h2>THE COMPANY</h2>
                 <ul>
-                    <li><a href = '#'>Careers</a></li>
-                    <li><a href = '#'>Careers - Designs</a></li>
-                    <li><a href = '#'>Legal</a></li>
-                    <li><a href = '#'>Privacy Policy and Cookies</a></li>
-                    <li><a href = '#'>The Givewell Programme</a></li>
+                    <li><a href = '/'>Careers</a></li>
+                    <li><a href = '/'>Careers - Designs</a></li>
+                    <li><a href = '/'>Legal</a></li>
+                    <li><a href = '/'>Privacy Policy and Cookies</a></li>
+                    <li><a href = '/'>The Givewell Programme</a></li>
                 </ul>
             </div>
             <div class = "footer_item">
                 <h2>CONNECT</h2>
                 <ul>
-                    <li><a href = '#'>Facebook</a></li>
-                    <li><a href = '#'>Instagram</a></li>
-                    <li><a href = '#'>Tiktok</a></li>
+                    <li><a href = '/'>Facebook</a></li>
+                    <li><a href = '/'>Instagram</a></li>
+                    <li><a href = '/'>Tiktok</a></li>
                 </ul>
             </div>
             <div class = "footer_item">
                 <h2>OUTLETS</h2>
                 <ul>
-                    <li><a href = '#'>Find a store nearby</a></li>
-                    <li><a href = '#'>Country / Region: Australia</a></li>
-                    <li><a href = '#'>Language : English</a></li>
+                    <li><a href = '/'>Find a store nearby</a></li>
+                    <li><a href = '/'>Country / Region: Australia</a></li>
+                    <li><a href = '/'>Language : English</a></li>
                 </ul>
             </div>
             <div class = "footer_item1">
                 <h2>CONTACT US</h2>
                 <ul>
-                    <li><a href = '#'>Our operators are available Mon-Fri 9a.m. - 5p.m.<br><br></a></li>
-                    <li><a href = '#'>CALL US<br>
+                    <li><a href = '/'>Our operators are available Mon-Fri 9a.m. - 5p.m.<br><br></a></li>
+                    <li><a href = '/'>CALL US<br>
                     (+61) 450089183<br><br></a></li>
-                    <li><a href = '#'>WHATSAPP<br>
+                    <li><a href = '/'>WHATSAPP<br>
                     (+61) 450089183<br><br></a></li>
-                    <li><a href = '#'>EMAIL US<br>
+                    <li><a href = '/'>EMAIL US<br>
                     vishnugrao@gmail.com</a></li>
                 </ul>
             </div>

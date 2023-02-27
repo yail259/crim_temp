@@ -19,7 +19,7 @@ if(prodlen < 16){
         let pushObj = {
             id: 16,
             name: "Qn marks",
-            image: "/mystery4.png",
+            image: "",
             price: 777
         }
         products.push(pushObj);
