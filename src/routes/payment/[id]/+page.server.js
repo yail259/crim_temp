@@ -4,14 +4,18 @@ import items from '/src/store'
 
 export async function load({ params, fetch }) {
     let id = params.id;
-    const clientSecretLoaded = await createPaymentIntent(id, fetch);
+    const response = await createPaymentIntent(id, fetch);
 
-    console.log(params.id)
+    const docRef = response.docRef;
+    const clientSecret = response.clientSecret;
 
-    console.log(clientSecretLoaded.clientSecret);
+    // console.log(response)
+
+    // console.log(clientSecret);
 
     return {
-        clientSecret: clientSecretLoaded.clientSecret,
+        docRef: docRef,
+        clientSecret: clientSecret,
     }
 }
 
@@ -32,11 +36,10 @@ async function createPaymentIntent(id, fetch) {
             'content-type': 'application/json',
         },
         body: JSON.stringify({
-            cost: selectedItem.price,
+            price: selectedItem.price,
+            name: selectedItem.name,
         })
     })
 
-    const clientSecret = await response.json();
-
-    return clientSecret;
+    return response.json();
 }

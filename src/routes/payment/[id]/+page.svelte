@@ -4,9 +4,12 @@
     import { loadStripe } from '@stripe/stripe-js';
     import { PUBLIC_STRIPE_KEY } from '$env/static/public'
 	import { onMount } from 'svelte';
+    import { doc, updateDoc } from "firebase/firestore";
+    import { db } from '$lib/firebase';
+
+
 
     let stripe;
-
     onMount(async () => {
         stripe = await loadStripe(PUBLIC_STRIPE_KEY);
     })
@@ -16,6 +19,10 @@
     let error = null;
     let elements;
     let processing = false;
+
+    let email = "";
+    let phone = "";
+
 
     async function submit() {
         // avoid processing duplicates
@@ -36,6 +43,18 @@
             error = result.error;
             processing = false;
         } else {
+            const docRef = doc(db, "orders", data.docRef);
+
+            console.log(docRef);
+
+            await updateDoc(docRef, {
+                name: result.paymentIntent.shipping.name,
+                phone: phone,
+                address: result.paymentIntent.shipping.address,
+                email: email,
+                success: true,
+            })
+
             goto('/payment-success');
         }
     }
@@ -59,7 +78,12 @@
             <form on:submit|preventDefault={submit}>
             <!-- <LinkAuthenticationElement /> -->
             <PaymentElement />
-            <!-- <Address mode="billing" /> -->
+            <Address mode="shipping"/>
+            <h2>email</h2>
+            <input required type="email" alt="email" bind:value={email}/>
+
+            <h2>phone</h2>
+            <input required type="tel" alt="phone" bind:value={phone}/>
 
             <button disabled={processing}>
                 {#if processing}

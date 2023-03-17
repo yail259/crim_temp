@@ -58,14 +58,14 @@
                     <li><a href = '/'>Tiktok</a></li>
                 </ul>
             </div>
-            <div class = "footer_item">
+            <!-- <div class = "footer_item">
                 <h2>OUTLETS</h2>
                 <ul>
                     <li><a href = '/'>Find a store nearby</a></li>
                     <li><a href = '/'>Country / Region: Australia</a></li>
                     <li><a href = '/'>Language : English</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class = "footer_item1">
                 <h2>CONTACT US</h2>
                 <ul>
@@ -74,8 +74,8 @@
                     (+61) 450089183<br><br></a></li>
                     <li><a href = '/'>WHATSAPP<br>
                     (+61) 450089183<br><br></a></li>
-                    <li><a href = '/'>EMAIL US<br>
-                    vishnugrao@gmail.com</a></li>
+                    <!-- <li><a href = '/'>EMAIL US<br>
+                    vishnugrao@gmail.com</a></li> -->
                 </ul>
             </div>
         </div>

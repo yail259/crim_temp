@@ -27,6 +27,7 @@
 	"type": "module",
 	"dependencies": {
 		"@stripe/stripe-js": "^1.46.0",
+		"firebase": "^9.18.0",
 		"hmr": "^0.1.0"
 	}
 }
