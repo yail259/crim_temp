@@ -32,12 +32,12 @@ products.sort(() => Math.random() - 0.4567);
 
 <nav class = "navbar_product">
     <ul class = "product_page_links">
-        <li><a href='/'>category one</a></li>
-        <li><a href='/'>category two</a></li>
+        <li><a href='/'>wallet</a></li>
+        <!-- <li><a href='/'>category two</a></li>
         <li><a href='/'>category three</a></li>
         <li><a href='/'>category four</a></li>
         <li><a href='/'>category five</a></li>
-        <li><a href='/'>category six</a></li>
+        <li><a href='/'>category six</a></li> -->
     </ul>
 </nav>
 

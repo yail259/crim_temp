@@ -1,21 +1,21 @@
 <nav class = "navbar">
     <ul class = "page_links">
-        <li><a href='/'>new arrivals</a></li>
-        <li><a href='/payment'>pay</a></li>
+        <!-- <li><a href='/'>new arrivals</a></li>
+        <li><a href='/payment'>pay</a></li> -->
         <li><a href='/product'>product</a></li>
     </ul>
 
     <h1><a href='/'>crim_</a></h1>
 
     <ul class = "right_links">
-        <li><a href = '/'>local</a></li>
+        <!-- <li><a href = '/'>local</a></li>
         <li><a href = '/'>momaddress</a></li>
-        <li><a href = '/'>dontclick</a></li>
+        <li><a href = '/'>dontclick</a></li> -->
     </ul>
 </nav>
-<div class = "searchbar">
+<!-- <div class = "searchbar">
     <input type='text' placeholder = '&#128269 What are you looking for?'>
-</div>
+</div> -->
 
 <slot/>
 
@@ -25,10 +25,10 @@
             <div class = "footer_item">
                 <h2>NEWSLETTER</h2>
                 <ul>
-                    <li><a href = '#'>Subscribe to our newsletter</a></li>
+                    <li><a href = '/newsletter'>Subscribe to our newsletter</a></li>
                 </ul>
             </div>
-            <div class = "footer_item">
+            <!-- <div class = "footer_item">
                 <h2>CLIENT SERVICES</h2>
                 <ul>
                     <li><a href = '/'>FAQ</a></li>
@@ -39,11 +39,11 @@
                     <li><a href = '/'>BOOK AN APPOINTMENT<br>
                     Your selected store will reply shortly</a></li>
                 </ul>
-            </div>
+            </div> -->
             <div class = "footer_item">
                 <h2>THE COMPANY</h2>
                 <ul>
-                    <li><a href = '/'>Careers</a></li>
+                    <!-- <li><a href = '/'>Careers</a></li> -->
                     <li><a href = '/'>Careers - Designs</a></li>
                     <li><a href = '/'>Legal</a></li>
                     <li><a href = '/'>Privacy Policy and Cookies</a></li>
@@ -53,19 +53,19 @@
             <div class = "footer_item">
                 <h2>CONNECT</h2>
                 <ul>
-                    <li><a href = '/'>Facebook</a></li>
-                    <li><a href = '/'>Instagram</a></li>
-                    <li><a href = '/'>Tiktok</a></li>
+                    <li><a href = 'https://www.facebook.com/crimanimal'>Facebook</a></li>
+                    <li><a href = 'https://instagram.com/crim_apparel?igshid=ZDdkNTZiNTM='>Instagram</a></li>
+                    <!-- <li><a href = '/'>Tiktok</a></li> -->
                 </ul>
             </div>
-            <!-- <div class = "footer_item">
-                <h2>OUTLETS</h2>
+            <div class = "footer_item">
+                <h2>LANGUAGE</h2>
                 <ul>
-                    <li><a href = '/'>Find a store nearby</a></li>
+                    <!-- <li><a href = '/'>Find a store nearby</a></li> -->
                     <li><a href = '/'>Country / Region: Australia</a></li>
                     <li><a href = '/'>Language : English</a></li>
                 </ul>
-            </div> -->
+            </div>
             <div class = "footer_item1">
                 <h2>CONTACT US</h2>
                 <ul>
